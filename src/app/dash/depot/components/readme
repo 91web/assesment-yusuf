@@ -1,0 +1,57 @@
+
+    <Grid container spacing={2}>
+      <Grid size={4}>
+        {/* Left Section: Icon + Texts */}
+        <Box display="flex" flexDirection="column">
+          <Box display="flex" alignItems="center">
+            <Image src={PMS} alt="PMS Logo" height={7} width={7} />
+            <Typography
+              fontFamily="Inter"
+              fontSize="14px"
+              fontWeight={600}
+              color="#FAFAFA"
+              sx={{ ml: 0.5 }}
+            >
+              NIPCO
+            </Typography>
+          </Box>
+          <Typography
+            fontFamily="Inter"
+            fontSize="8px"
+            fontWeight={500}
+            color="#A3A3A3"
+          >
+            Lagos
+          </Typography>
+        </Box>
+      </Grid>
+      <Grid size={4}>
+        {/* Middle Section: Chart Image */}
+        <Box mt={0}>
+          <Image src={Chart2} alt="Chart" height={25} width={75} />
+        </Box>
+      </Grid>
+      <Grid size={4}>
+        {/* Right Section: Price Section */}
+        <Box display="flex" flexDirection="column">
+          <Typography
+            fontFamily="Inter"
+            fontSize="12px"
+            fontWeight={500}
+            color="#FAFAFA"
+            textAlign={"right"}
+          >
+            N714.26
+          </Typography>
+          <Typography
+            fontFamily="Inter"
+            fontSize="12px"
+            fontWeight={500}
+            color="#12B76A"
+            textAlign={"right"}
+          >
+            +0.37
+          </Typography>
+        </Box>
+      </Grid>
+    </Grid>
