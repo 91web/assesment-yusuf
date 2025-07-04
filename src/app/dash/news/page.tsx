@@ -7,7 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import PMS from "../../../assets/svg/pms-logo.svg";
-import Chart1 from "../../../assets/img/chart1.png";
+//import Chart1 from "../../../assets/img/chart1.png";
 import Chart2 from "../../../assets/img/chart2.png";
 //import Chart3 from "../../../assets/img/chart3.png";
 import Product1 from "../../../assets/img/prod1.png";
