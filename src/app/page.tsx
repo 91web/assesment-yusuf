@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Typography from "@mui/material/Typography";
+//import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
 import Image from "next/image";

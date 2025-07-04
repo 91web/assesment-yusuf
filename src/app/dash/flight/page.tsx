@@ -1,15 +1,13 @@
 "use client";
 import Box from "@mui/material/Box";
 import React, { useState } from "react";
-import { styled } from "@mui/material/styles";
+//import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
-import PMS from "../../../assets/svg/pms-logo.svg";
 import Flight1 from "../../../assets/svg/flight1.svg";
 import FlightChart1 from "../../../assets/img/flight-chart1.png";
-import Chart3 from "../../../assets/img/chart3.png";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Button from "@mui/material/Button";
 import FlightTab from "./components/tab";
@@ -20,10 +18,7 @@ import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
 
 const SmallCard = () => {
-  const [value, setValue] = useState(0);
-  const handleChange = (event: any, newValue: React.SetStateAction<number>) => {
-    setValue(newValue);
-  };
+
 
   return (
     <Box
