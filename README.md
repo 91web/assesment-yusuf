@@ -1,5 +1,53 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Built with **React**, **TypeScript**, and **Material-UI (MUI)**, the project demonstrates modular code structure, UI consistency, and clean state management.
+
+## 🚀 Live Demo
+
+🔗 [https://assesment-yusuf.vercel.app](https://assesment-yusuf.vercel.app)
+
+## 📦 Repository
+
+🔗 [GitHub Repository](https://github.com/91web/assesment-yusuf.git)
+
+---
+
+## 📋 Features
+
+- ✅ Fully responsive design (mobile, tablet, desktop)
+- ✅ Developed with **React** and **TypeScript**
+- ✅ Styled using **Material-UI (MUI)**
+- ✅ Reusable, modular components
+- ✅ Simple folder structure for easy maintenance
+- ✅ Live preview with Vercel
+- ✅ Clean, minimal interface based on provided Figma design
+
+---
+
+## 🛠️ Technologies Used
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [MUI](https://mui.com/)
+- [Vercel](https://vercel.com/) (for deployment)
+
+---
+
+## 📂 Project Structure
+
+````bash
+├── components/
+│   └── common/            # Reusable UI components
+├── pages/
+│   └── index.tsx          # Main landing/dashboard page
+├── assets/                # Static images, logos
+├── styles/                # Global styles if any
+├── utils/                 # Utility functions or mock data
+├── public/                # Public assets
+├── package.json
+└── README.md
+
+
 ## Getting Started
 
 First, run the development server:
@@ -12,7 +60,7 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+````
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
