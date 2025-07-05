@@ -742,7 +742,7 @@ const WatchList = () => {
   const [size, setSize] = useState<"S" | "M" | "L">("S");
 
   return (
-    <Box mb={10}>
+    <Box mb={2}>
       <Card
         sx={{
           maxWidth: 350,
