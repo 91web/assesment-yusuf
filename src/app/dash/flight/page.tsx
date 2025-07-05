@@ -18,8 +18,6 @@ import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
 
 const SmallCard = () => {
-
-
   return (
     <Box
       id="s"

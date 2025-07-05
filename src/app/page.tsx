@@ -31,7 +31,7 @@ export default function Home() {
       }}
     >
       <Fade in={fadeIn} timeout={1000}>
-       <Image src={Log} alt="Logo" width={200} height={200} />
+       <Image src={Log} alt="Logo" width={200} height={200} style={{borderRadius:8}}/>
       </Fade>
     </Box>
   );

@@ -280,7 +280,7 @@ const MediumCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart2} alt="Chart" height={25} width={75} />
+        <Image src={Chart2} alt="Chart" height={25} width={95} />
       </Box>
 
       {/* Price Section */}
@@ -332,7 +332,7 @@ const MediumCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart4} alt="Chart" height={25} width={75} />
+        <Image src={Chart4} alt="Chart" height={25} width={85} />
       </Box>
 
       {/* Price Section */}
@@ -385,7 +385,7 @@ const MediumCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart5} alt="Chart" height={25} width={95} />
+        <Image src={Chart5} alt="Chart" height={25} width={105} />
       </Box>
 
       {/* Price Section */}

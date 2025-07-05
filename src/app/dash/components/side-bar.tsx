@@ -16,7 +16,7 @@ import Menu from "../../../assets/svg/menu.svg";
 import { useMediaQuery, useTheme } from "@mui/material";
 import SearchBar from "./search";
 
-const drawerWidth = 160;
+const drawerWidth = 120;
 const collapsedWidth = 40;
 
 export default function ResponsiveDrawer() {
@@ -38,84 +38,86 @@ export default function ResponsiveDrawer() {
 
   // Shared drawer content
   const drawerContent = (
-    <List>
-      {!isMobile && ( // Collapse button only on desktop
-        <IconButton onClick={toggleCollapse} sx={{ color: "#ffffff" }}>
-          <MenuIcon />
-        </IconButton>
-      )}
-      <SearchBar />
-      {NavItem.map((item) => (
-        <ListItem key={item.id} disablePadding>
-          <ListItemButton
-            onClick={() => handleNavigation(item.url)}
-            selected={pathname === item.url}
-            sx={{
-              justifyContent: collapsed && !isMobile ? "center" : "initial",
-              px: 1,
-              color: "#ffffff",
-              "&.Mui-selected": {
-                backgroundColor: "#404040",
-                borderRadius: 5,
-                height:"36px",
-                my: 1,
-              },
-              "&:hover": {
-                backgroundColor: "#424242",
-                borderRadius: 5,
-                // my: 2,
-              },
-            }}
-          >
-            <ListItemIcon
+    <Box>
+      <List>
+        {!isMobile && ( // Collapse button only on desktop
+          <IconButton onClick={toggleCollapse} sx={{ color: "#ffffff" }}>
+            <MenuIcon />
+          </IconButton>
+        )}
+        <SearchBar />
+        {NavItem.map((item) => (
+          <ListItem key={item.id} disablePadding>
+            <ListItemButton
+              onClick={() => handleNavigation(item.url)}
+              selected={pathname === item.url}
               sx={{
-                minWidth: 0,
-                mr: collapsed && !isMobile ? "auto" : 1,
-                justifyContent: "center",
-                color: pathname === item.url ? "#FF8D64" : "#ffffff",
+                justifyContent: collapsed && !isMobile ? "center" : "initial",
+                px: 1,
+                color: "#ffffff",
+                "&.Mui-selected": {
+                  backgroundColor: "#404040",
+                  borderRadius: 5,
+                  height: "36px",
+                  my: 1,
+                },
+                "&:hover": {
+                  backgroundColor: "#424242",
+                  borderRadius: 5,
+                  // my: 2,
+                },
               }}
             >
-              <Image
-                src={item.icon || Menu.src}
-                alt={item.text}
-                width={15}
-                height={15}
-              />
-            </ListItemIcon>
-            {(!collapsed || isMobile) && ( // Always show text on mobile
-              <ListItemText
-                primary={item.text}
-                slotProps={{
-                  primary: {
-                    sx: {
-                      fontSize: pathname === item.url ? 12 : 10,
-                      fontWeight: pathname === item.url ? "bold" : "normal",
-                      fontFamily: pathname === item.url ? "inter" : "Helvetica",
-                      color: "#ffffff",
-                    },
-                  },
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: collapsed && !isMobile ? "auto" : 1,
+                  justifyContent: "center",
+                  color: pathname === item.url ? "#FF8D64" : "#ffffff",
                 }}
-              />
-            )}
-          </ListItemButton>
-        </ListItem>
-      ))}
-    </List>
+              >
+                <Image
+                  src={item.icon || Menu.src}
+                  alt={item.text}
+                  width={15}
+                  height={15}
+                />
+              </ListItemIcon>
+              {(!collapsed || isMobile) && ( // Always show text on mobile
+                <ListItemText
+                  primary={item.text}
+                  slotProps={{
+                    primary: {
+                      sx: {
+                        fontSize: pathname === item.url ? 8 : 10,
+                        fontWeight: pathname === item.url ? "bold" : "normal",
+                        fontFamily: "inter",
+                        color: "#ffffff",
+                      },
+                    },
+                  }}
+                />
+              )}
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
   );
 
   return (
-    <>
+    <Box>
       {/* Desktop Drawer (Left) */}
       <Box
         sx={{
           width: collapsed ? collapsedWidth : drawerWidth,
-          backgroundColor: "#262626",
+          //   backgroundColor: "#262626",
           // height: "100vh",
           position: "fixed",
           left: 0,
           top: 0,
           ml: 1,
-          display: { xs: "none", sm: "block" }, // Hidden on mobile
+          display: { xs: "none", md: "block" }, // Hidden on mobile
         }}
       >
         {drawerContent}
@@ -144,7 +146,7 @@ export default function ResponsiveDrawer() {
         onClose={toggleMobileDrawer}
         ModalProps={{ keepMounted: true }}
         sx={{
-          display: { xs: "block", sm: "none" },
+          display: { xs: "block", md: "none" },
           "& .MuiDrawer-paper": {
             width: drawerWidth,
             backgroundColor: "#262626",
@@ -153,6 +155,6 @@ export default function ResponsiveDrawer() {
       >
         {drawerContent}
       </Drawer>
-    </>
+    </Box>
   );
 }

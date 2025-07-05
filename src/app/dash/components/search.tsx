@@ -9,9 +9,9 @@ export default function SearchBar() {
         display: "flex",
         alignItems: "center",
         bgcolor: "#2c2c2c",
-      p:1,
+        p: 1,
         borderRadius: "24px",
-              width: 160,
+        width: 120,
         height: 35,
       }}
     >
