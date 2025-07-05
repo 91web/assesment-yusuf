@@ -211,17 +211,37 @@ const LargeCard = () => (
                 <span style={{ fontWeight: 400, fontSize: 12 }}>Flights</span>
               </Typography>
             </Box>
-            <Box>
+            <Box display="flex" alignItems="center" gap={1.2}>
+              <Box width={5} height={5} borderRadius="50%" bgcolor="#1E88E5" />
               <Typography
                 fontFamily="Inter"
                 fontSize="10px"
                 fontWeight={500}
-                textAlign={"right"}
                 color="#A3A3A3"
+                ml={-0.9}
+              >
+                Commercial
+              </Typography>
+              <Box width={5} height={5} borderRadius="50%" bgcolor="#26A69A" />
+              <Typography
+                fontFamily="Inter"
+                fontSize="10px"
+                fontWeight={500}
+                color="#A3A3A3"
+                ml={-0.9}
+              >
+                Military
+              </Typography>
+              <Box width={5} height={5} borderRadius="50%" bgcolor="#F79009" />
+              <Typography
+                fontFamily="Inter"
+                fontSize="10px"
+                fontWeight={500}
+                color="#A3A3A3"
+                ml={-0.9}
               >
                 Private
               </Typography>
-              <Box borderRadius={"50%"} color="#F79009"></Box>
             </Box>
           </Box>
           <Box
