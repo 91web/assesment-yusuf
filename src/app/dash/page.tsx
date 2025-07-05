@@ -5,7 +5,7 @@ import ProductNews from "./components/product-news";
 import Grid from "@mui/material/Grid";
 import WatchList from "./components/watch-list";
 import ListNews from "./components/watch-listnews";
-import PMSChart from "./components/chart";
+
 
 
 const DashHome = () => {
