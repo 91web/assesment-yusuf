@@ -211,6 +211,18 @@ const LargeCard = () => (
                 <span style={{ fontWeight: 400, fontSize: 12 }}>Flights</span>
               </Typography>
             </Box>
+            <Box>
+              <Typography
+                fontFamily="Inter"
+                fontSize="10px"
+                fontWeight={500}
+                textAlign={"right"}
+                color="#A3A3A3"
+              >
+                Private
+              </Typography>
+              <Box borderRadius={"50%"} color="#F79009"></Box>
+            </Box>
           </Box>
           <Box
             display="flex"
@@ -307,7 +319,7 @@ const FlightWidget = () => {
     <Box mb={2}>
       <Card
         sx={{
-          width: 500,
+          maxwidth: 350,
           height: size === "L" ? 530 : "auto", // Set card height to 550 when L
           backgroundColor: "#333",
           borderRadius: 5,
