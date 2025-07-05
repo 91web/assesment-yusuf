@@ -40,7 +40,7 @@ const StyledTab = styled((props: React.ComponentProps<typeof MuiTab>) => (
     paddingTop: "0px",
     paddingDown: "0px",
     paddingLeft:"4px",
-    mt:"-2px",// Further reduced vertical padding
+    mt:"-2px",
   
   "&.Mui-selected": {
     color: "#009688",

@@ -1,12 +1,12 @@
 "use client";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
 import Table from "@mui/material/Table";
 import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
 import Image from "next/image";
 import Flight1 from "../../assets/svg/flight1.svg";
+import PMG from "../../assets/svg/pms-logo.svg";
 import FlightChart1 from "../../assets/img/flight-chart1.png";
 import FlightTab from "./flight-tab";
 import TableBody from "@mui/material/TableBody";
@@ -14,27 +14,46 @@ import TableBody from "@mui/material/TableBody";
 const FlightOverview = () => (
   <Box
     sx={{
-      width: 160,
+      width: 180,
       height: 130,
-      bgcolor: "#171717",
+      background: "linear-gradient(90deg, #171717 57%, #404040 43%)",
       borderRadius: "10px",
       p: 1,
     }}
   >
     <Grid container spacing={0.5}>
       <Grid size={7}>
-        <Box display="flex" alignItems="center">
-          <Image src={Flight1} alt="PMS Logo" height={14} width={14} />
-          <Typography
-            fontFamily="inter"
-            fontSize="10px"
+        <Box display="flex" alignItems="center" gap={0.25}>
+          <Image src={Flight1} alt="PMS Logo" height={10} width={10} />
+
+          <Box
+            component="div" // Use "div" instead of "Typography" for proper rendering
+            fontFamily="Inter"
+            fontSize="8px"
             fontWeight={500}
             color="#FAFAFA"
-            ml={0.25}
+            display="flex"
+            alignItems="center"
+            gap={0.25}
           >
-            284,774{" "}
-            <span style={{ fontWeight: 400, fontSize: 6 }}>Flights</span>
-          </Typography>
+            284,774
+            <span
+              style={{ fontWeight: 400, fontSize: "4px", color: "#A3A3A3" }}
+            >
+              Flights
+            </span>
+            <Box>
+              <Image src={PMG} alt="PMS Logo" height={2} width={2} />
+            </Box>
+            <Box sx={{ fontWeight: 400, fontSize: "5px", color: "#027A48" }}>
+              15%
+            </Box>
+            <span
+              style={{ fontWeight: 400, fontSize: "4px", color: "#A3A3A3" }}
+            >
+              last week
+            </span>
+          </Box>
         </Box>
         <Box mt={1} display="flex" justifyContent="center">
           <Image src={FlightChart1} alt="Chart" height={36} width={108} />
@@ -44,7 +63,7 @@ const FlightOverview = () => (
         </Box>
       </Grid>
       <Grid size={5}>
-        <Box mt={3}>
+        <Box mt={4}>
           <Table size="small">
             <TableBody>
               {[

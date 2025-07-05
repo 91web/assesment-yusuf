@@ -203,9 +203,9 @@ const MediumCard = () => (
       p: 1,
     }}
   >
-    <Box display="flex" alignItems="center" gap={{xs:2, sm:3, md:6}}>
+    <Box display="flex" alignItems="center" gap={6}>
       {/* Price Section  and  Icon + Texts in row*/}
-      <Box display="flex" alignItems="center" gap={2}>
+      <Box display="flex" alignItems="center" gap={6}>
         {/* Icon + Texts */}
         <Box display="flex" flexDirection="column">
           <Box display="flex" alignItems="center">
@@ -255,7 +255,7 @@ const MediumCard = () => (
         </Box>
       </Box>
    {/* Price Section  and  Icon + Texts in row*/}
-      <Box display="flex" alignItems="center" gap={4}>
+      <Box display="flex" alignItems="center" gap={6}>
         {/* Icon + Texts */}
         <Box display="flex" flexDirection="column">
           <Box display="flex" alignItems="center">
@@ -407,9 +407,9 @@ const LargeCard = () => (
       p: 1,
     }}
   >
-    <Box display="flex" alignItems="center" gap={{ xs: 2, sm: 3, md: 6 }}>
+    <Box display="flex" alignItems="center" gap={6}>
       {/* Price Section  and  Icon + Texts in row*/}
-      <Box display="flex" alignItems="center" gap={2}>
+      <Box display="flex" alignItems="center" gap={6}>
         {/* Icon + Texts */}
         <Box display="flex" flexDirection="column">
           <Box display="flex" alignItems="center">
@@ -459,7 +459,7 @@ const LargeCard = () => (
         </Box>
       </Box>
       {/* Price Section  and  Icon + Texts in row*/}
-      <Box display="flex" alignItems="center" gap={4}>
+      <Box display="flex" alignItems="center" gap={6}>
         {/* Icon + Texts */}
         <Box display="flex" flexDirection="column">
           <Box display="flex" alignItems="center">

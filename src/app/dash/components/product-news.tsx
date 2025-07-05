@@ -75,7 +75,7 @@ const MediumCard = () => (
     id="m"
     sx={{
       width: 312,
-      height: 170,
+      height: 190,
       bgcolor: "#171717",
       borderRadius: "20px",
       p: 1,
@@ -108,14 +108,14 @@ const MediumCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart2} alt="Chart" height={25} width={75} />
+        <Image src={Chart2} alt="Chart" height={25} width={135} />
       </Box>
 
       {/* Price Section */}
       <Box display="flex" flexDirection="column">
         <Typography
           fontFamily="Inter"
-          fontSize="12px"
+          fontSize="10px"
           fontWeight={500}
           color="#FAFAFA"
         >
@@ -123,8 +123,9 @@ const MediumCard = () => (
         </Typography>
         <Typography
           fontFamily="Inter"
-          fontSize="12px"
+          fontSize="10px"
           fontWeight={500}
+          textAlign={"right"}
           color="#12B76A"
         >
           +0.37
@@ -203,7 +204,7 @@ const LargeCard = () => (
     id="L"
     sx={{
       width: 312,
-      height: 325,
+      height: 355,
       bgcolor: "#171717",
       borderRadius: "20px",
       p: 1,
@@ -236,14 +237,14 @@ const LargeCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart2} alt="Chart" height={25} width={75} />
+        <Image src={Chart2} alt="Chart" height={25} width={135} />
       </Box>
 
       {/* Price Section */}
       <Box display="flex" flexDirection="column">
         <Typography
           fontFamily="Inter"
-          fontSize="12px"
+          fontSize="10px"
           fontWeight={500}
           color="#FAFAFA"
         >
@@ -251,8 +252,9 @@ const LargeCard = () => (
         </Typography>
         <Typography
           fontFamily="Inter"
-          fontSize="12px"
+          fontSize="10px"
           fontWeight={500}
+          textAlign={"right"}
           color="#12B76A"
         >
           +0.37
@@ -264,7 +266,7 @@ const LargeCard = () => (
       display="flex"
       justifyContent="space-between"
       alignItems="center"
-    //  mt={2}
+      //  mt={2}
     >
       <Box width={180}>
         <Image src={Van} alt="PMS Logo" height={72} width={215} />
@@ -296,7 +298,7 @@ const LargeCard = () => (
       display="flex"
       justifyContent="space-between"
       alignItems="center"
-     // mt={2}
+      // mt={2}
     >
       <Box width={180}>
         <Image src={Van} alt="PMS Logo" height={72} width={215} />
@@ -328,7 +330,7 @@ const LargeCard = () => (
       display="flex"
       justifyContent="space-between"
       alignItems="center"
-    //  mt={1}
+      //  mt={1}
     >
       <Box width={180}>
         <Image src={Van} alt="PMS Logo" height={72} width={215} />
@@ -360,7 +362,7 @@ const LargeCard = () => (
       display="flex"
       justifyContent="space-between"
       alignItems="center"
-    //  mt={1}
+      //  mt={1}
     >
       <Box width={180}>
         <Image src={Van} alt="PMS Logo" height={72} width={215} />
@@ -369,7 +371,7 @@ const LargeCard = () => (
           fontSize={"6px"}
           fontWeight={500}
           color="#FFFFFF"
-       //   mt={1}
+          //   mt={1}
         >
           Heirs Energies doubles oil production – Official
         </Typography>
@@ -392,7 +394,7 @@ const LargeCard = () => (
       display="flex"
       justifyContent="space-between"
       alignItems="center"
-    //  mt={2}
+      //  mt={2}
     >
       <Box width={180}>
         <Image src={Van} alt="PMS Logo" height={72} width={215} />
@@ -401,7 +403,7 @@ const LargeCard = () => (
           fontSize={"6px"}
           fontWeight={500}
           color="#FFFFFF"
-       //   mt={1}
+          //   mt={1}
         >
           Heirs Energies doubles oil production – Official
         </Typography>

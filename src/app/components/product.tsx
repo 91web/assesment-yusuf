@@ -13,7 +13,7 @@ import Divider from "@mui/material/Divider";
 const ProductOverview = () => (
   <Box
     sx={{
-      width: 150,
+      width: 165,
       height: 130,
       bgcolor: "#171717",
       borderRadius: "10px",
@@ -44,7 +44,7 @@ const ProductOverview = () => (
           Premium Motor Spirit
         </Typography>
       </Box>
-      <Image src={Chart2} alt="Chart" height={12} width={38} />
+      <Image src={Chart2} alt="Chart" height={12} width={58} />
       <Box>
         <Typography
           fontFamily="Inter"
@@ -91,7 +91,7 @@ const ProductOverview = () => (
           Automotive Gas Oil
         </Typography>
       </Box>
-      <Image src={Chart4} alt="Chart" height={12} width={38} />
+      <Image src={Chart4} alt="Chart" height={12} width={58} />
       <Box>
         <Typography
           fontFamily="Inter"
@@ -139,7 +139,7 @@ const ProductOverview = () => (
           ICE Brent Crude
         </Typography>
       </Box>
-      <Image src={Chart5} alt="Chart" height={12} width={48} />
+      <Image src={Chart5} alt="Chart" height={12} width={68} />
       <Box>
         <Typography
           fontFamily="Inter"
@@ -187,7 +187,7 @@ const ProductOverview = () => (
           Dual Purpose Kerosene
         </Typography>
       </Box>
-      <Image src={Chart6} alt="Chart" height={12} width={38} />
+      <Image src={Chart6} alt="Chart" height={12} width={58} />
       <Box>
         <Typography
           fontFamily="Inter"

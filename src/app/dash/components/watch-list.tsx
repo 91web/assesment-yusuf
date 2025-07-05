@@ -23,7 +23,7 @@ const SmallCard = () => (
     id="s"
     sx={{
       width: { xs: "100%", md: 240 },
-      height: {xs:300, md:220},
+      height: { xs: 300, md: 220 },
       bgcolor: "#171717",
       borderRadius: "20px",
       p: 2,
@@ -72,7 +72,6 @@ const SmallCard = () => (
             fontFamily={"inter"}
             fontSize={"10px"}
             fontWeight={500}
-
             sx={{ color: "#12B76A" }}
           >
             +0.37%
@@ -99,7 +98,6 @@ const SmallCard = () => (
             fontFamily={"inter"}
             fontSize={"10px"}
             fontWeight={500}
-
             sx={{ color: "#FAFAFA" }}
           >
             N1249.06
@@ -113,7 +111,6 @@ const SmallCard = () => (
             fontFamily={"inter"}
             fontSize={"10px"}
             fontWeight={500}
-
             color="#A3A3A3"
             // sx={{ marginLeft: 0.5 }}
           >
@@ -125,7 +122,6 @@ const SmallCard = () => (
             fontFamily={"inter"}
             fontSize={"10px"}
             fontWeight={500}
-
             sx={{ color: "#F04438" }}
           >
             -9.01
@@ -152,7 +148,6 @@ const SmallCard = () => (
             fontFamily={"inter"}
             fontSize={"10px"}
             fontWeight={500}
-
             sx={{ color: "#FAFAFA" }}
           >
             N0.00
@@ -166,7 +161,6 @@ const SmallCard = () => (
             fontFamily={"inter"}
             fontSize={"10px"}
             fontWeight={500}
-
             color="#A3A3A3"
             // sx={{ marginLeft: 0.5 }}
           >
@@ -178,7 +172,6 @@ const SmallCard = () => (
             fontFamily={"inter"}
             fontSize={"10px"}
             fontWeight={500}
-
             sx={{ color: "#12B76A" }}
           >
             0.00
@@ -205,7 +198,6 @@ const SmallCard = () => (
             fontFamily={"inter"}
             fontSize={"10px"}
             fontWeight={500}
-
             sx={{ color: "#FAFAFA" }}
           >
             N1088.92
@@ -219,7 +211,6 @@ const SmallCard = () => (
             fontFamily={"inter"}
             fontSize={"10px"}
             fontWeight={500}
-
             color="#A3A3A3"
             // sx={{ marginLeft: 0.5 }}
           >
@@ -231,7 +222,6 @@ const SmallCard = () => (
             fontFamily={"inter"}
             fontSize={"10px"}
             fontWeight={500}
-
             sx={{ color: "#F04438" }}
           >
             -50.90
@@ -244,10 +234,10 @@ const SmallCard = () => (
 
 const MediumCard = () => (
   <Box
-    id="m"
+    id="l"
     sx={{
-      width: { xs: "100%", md: 312 },
-      height: 270,
+      width: 312,
+      height: 320,
       bgcolor: "#171717",
       borderRadius: "20px",
       p: 1,
@@ -280,7 +270,7 @@ const MediumCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart2} alt="Chart" height={25} width={95} />
+        <Image src={Chart2} alt="Chart" height={25} width={115} />
       </Box>
 
       {/* Price Section */}
@@ -332,7 +322,7 @@ const MediumCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart4} alt="Chart" height={25} width={85} />
+        <Image src={Chart4} alt="Chart" height={25} width={115} />
       </Box>
 
       {/* Price Section */}
@@ -358,6 +348,7 @@ const MediumCard = () => (
       </Box>
     </Box>
     <Divider sx={{ bgcolor: "#36353A", my: 0.5 }} />
+
     <Box display="flex" alignItems="center" gap={4}>
       {/* Icon + Texts */}
       <Box display="flex" flexDirection="column">
@@ -385,7 +376,7 @@ const MediumCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart5} alt="Chart" height={25} width={105} />
+        <Image src={Chart5} alt="Chart" height={25} width={145} />
       </Box>
 
       {/* Price Section */}
@@ -410,6 +401,7 @@ const MediumCard = () => (
         </Typography>
       </Box>
     </Box>
+
     <Divider sx={{ bgcolor: "#36353A", my: 0.5 }} />
     <Box display="flex" alignItems="center" gap={4}>
       {/* Icon + Texts */}
@@ -438,7 +430,7 @@ const MediumCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart6} alt="Chart" height={25} width={75} />
+        <Image src={Chart6} alt="Chart" height={25} width={105} />
       </Box>
 
       {/* Price Section */}
@@ -463,6 +455,7 @@ const MediumCard = () => (
         </Typography>
       </Box>
     </Box>
+   
   </Box>
 );
 
@@ -504,7 +497,7 @@ const LargeCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart2} alt="Chart" height={25} width={75} />
+        <Image src={Chart2} alt="Chart" height={25} width={115} />
       </Box>
 
       {/* Price Section */}
@@ -556,7 +549,7 @@ const LargeCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart4} alt="Chart" height={25} width={75} />
+        <Image src={Chart4} alt="Chart" height={25} width={115} />
       </Box>
 
       {/* Price Section */}
@@ -581,10 +574,7 @@ const LargeCard = () => (
         </Typography>
       </Box>
     </Box>
-        <Divider sx={{ bgcolor: "#36353A", my: 0.5 }} />
-        
-
-
+    <Divider sx={{ bgcolor: "#36353A", my: 0.5 }} />
 
     <Box display="flex" alignItems="center" gap={4}>
       {/* Icon + Texts */}
@@ -613,7 +603,7 @@ const LargeCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart5} alt="Chart" height={25} width={95} />
+        <Image src={Chart5} alt="Chart" height={25} width={145} />
       </Box>
 
       {/* Price Section */}
@@ -637,9 +627,7 @@ const LargeCard = () => (
           0.00
         </Typography>
       </Box>
-        </Box>
-        
-
+    </Box>
 
     <Divider sx={{ bgcolor: "#36353A", my: 0.5 }} />
     <Box display="flex" alignItems="center" gap={4}>
@@ -669,7 +657,7 @@ const LargeCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart6} alt="Chart" height={25} width={75} />
+        <Image src={Chart6} alt="Chart" height={25} width={105} />
       </Box>
 
       {/* Price Section */}
@@ -722,7 +710,7 @@ const LargeCard = () => (
 
       {/* Chart Image */}
       <Box mt={0}>
-        <Image src={Chart7} alt="Chart" height={25} width={75} />
+        <Image src={Chart7} alt="Chart" height={25} width={105} />
       </Box>
 
       {/* Price Section */}
